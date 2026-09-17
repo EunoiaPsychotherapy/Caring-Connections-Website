@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Claire Perry | Caring Connections Therapy | Counsellor in Sealand, Deeside</title>
+    <title>Claire Perry | Caring Connections Therapy | Counsellor in Ellesmere Port, Runcorn and Buckley</title>
     <meta
       name="description"
-      content="A warm, supportive space with Claire Perry, integrative counsellor, to explore grief, trauma, relationships, health changes and the experiences that can leave you feeling overwhelmed or stuck. In-person counselling in Sealand, Deeside, with online and telephone sessions also available."
+      content="A warm, supportive space with Claire Perry, integrative counsellor, to explore grief, trauma, relationships, health changes and the experiences that can leave you feeling overwhelmed or stuck. In-person counselling in Ellesmere Port, Runcorn and Buckley, with online and telephone sessions also available."
     />
     <meta name="theme-color" content="#562179" />
     <link rel="canonical" href="./" />
@@ -15,7 +15,7 @@
     <meta property="og:title" content="Claire Perry | Caring Connections Therapy" />
     <meta
       property="og:description"
-      content="Integrative counselling with a person-centred focus in Sealand, Deeside, Flintshire. Online and telephone counselling also available."
+      content="Integrative counselling with a person-centred focus in Ellesmere Port, Runcorn and Buckley. Online and telephone counselling also available."
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_GB" />
@@ -35,17 +35,40 @@
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Caring Connections Therapy",
-        "description": "Integrative counselling with a person-centred focus, offered in person in Sealand, Deeside, Flintshire, and online or by telephone.",
+        "description": "Integrative counselling with a person-centred focus, offered in person in Ellesmere Port, Runcorn and Buckley, and online or by telephone.",
         "image": "./images/logo.png",
-        "areaServed": ["Sealand", "Deeside", "Flintshire"],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "72 Leopard Moth Road",
-          "addressLocality": "Sealand",
-          "addressRegion": "Flintshire",
-          "postalCode": "CH5 2FX",
-          "addressCountry": "GB"
-        },
+        "areaServed": ["Ellesmere Port", "Runcorn", "Buckley", "Flintshire"],
+        "location": [
+          {
+            "@type": "Place",
+            "name": "Pioneer House",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Ellesmere Port",
+              "addressCountry": "GB"
+            }
+          },
+          {
+            "@type": "Place",
+            "name": "The Old Police Station",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Runcorn Old Town",
+              "addressCountry": "GB"
+            }
+          },
+          {
+            "@type": "Place",
+            "name": "Buckley",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Buckley",
+              "addressRegion": "Flintshire",
+              "addressCountry": "GB"
+            }
+          }
+        ],
+        "email": "caringconnetions@protonmail.com",
         "founder": {
           "@type": "Person",
           "name": "Claire Perry",
@@ -92,14 +115,14 @@
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-heading">
         <div class="wrap hero-inner">
-          <img
-            class="hero-logo"
-            src="./images/logo.png"
-            width="1050"
-            height="600"
-            alt="Caring Connections Therapy logo"
-          />
           <div class="hero-copy">
+            <img
+              class="hero-logo"
+              src="./images/logo.png"
+              width="1050"
+              height="600"
+              alt="Caring Connections Therapy logo"
+            />
             <h1 id="hero-heading">Claire Perry</h1>
             <p class="role">Integrative Counsellor with a Person-Centred Focus</p>
             <p class="lede">
@@ -107,16 +130,24 @@
               the experiences that can leave you feeling overwhelmed or stuck.
             </p>
             <p class="hero-meta">
-              <span>In-person counselling in Sealand, Deeside, Flintshire</span>
-              <span>Online and telephone counselling also available</span>
+              In-person counselling in Ellesmere Port, Runcorn and Buckley, with online and
+              telephone sessions also available.
             </p>
             <a class="btn" href="#contact">Get in touch</a>
           </div>
+          <figure class="hero-portrait">
+            <img
+              src="./images/portrait.jpg"
+              width="1396"
+              height="2046"
+              alt="Claire Perry, integrative counsellor"
+            />
+          </figure>
         </div>
       </section>
 
-      <section class="section" id="about" aria-labelledby="about-heading">
-        <div class="wrap about-grid">
+      <section class="section about-section" id="about" aria-labelledby="about-heading">
+        <div class="wrap about-layout">
           <figure class="portrait reveal">
             <img
               src="./images/portrait.jpg"
@@ -125,7 +156,7 @@
               alt="Claire Perry, integrative counsellor"
             />
           </figure>
-          <div class="measure reveal">
+          <div class="about-copy measure reveal">
             <p class="eyebrow">The person you would be meeting</p>
             <h2 id="about-heading">About Claire</h2>
             <p>
@@ -177,7 +208,7 @@
         </div>
       </section>
 
-      <section class="section" id="support" aria-labelledby="support-heading">
+      <section class="section support-section" id="support" aria-labelledby="support-heading">
         <div class="wrap">
           <div class="support-intro reveal">
             <p class="eyebrow">How I can support you</p>
@@ -190,68 +221,60 @@
           </div>
 
           <div class="support-flow">
-            <article class="support-entry featured reveal">
-              <p class="num">01</p>
+            <article class="support-entry lead wash-lilac reveal">
+              <p class="num" aria-hidden="true">01</p>
               <h3>Grief &amp; Bereavement</h3>
-              <hr class="rule" />
               <p>Including anticipatory grief and the loss of someone important.</p>
             </article>
 
-            <article class="support-entry end reveal">
-              <p class="num">02</p>
+            <article class="support-entry reveal">
+              <p class="num" aria-hidden="true">02</p>
               <h3>Trauma &amp; Difficult Experiences</h3>
-              <hr class="rule" />
               <p>A safe space to explore experiences that continue to affect you.</p>
             </article>
 
-            <article class="support-entry reveal">
-              <p class="num">03</p>
+            <article class="support-entry wash-aqua reveal">
+              <p class="num" aria-hidden="true">03</p>
               <h3>Health &amp; Life-Changing Diagnosis</h3>
-              <hr class="rule" />
               <p>Support with the emotional impact of illness, change and uncertainty.</p>
             </article>
 
-            <article class="support-entry end reveal">
-              <p class="num">04</p>
+            <article class="support-entry reveal">
+              <p class="num" aria-hidden="true">04</p>
               <h3>Family &amp; Relationships</h3>
-              <hr class="rule" />
               <p>Exploring difficult family dynamics and patterns in relationships.</p>
             </article>
 
             <article class="support-entry reveal">
-              <p class="num">05</p>
+              <p class="num" aria-hidden="true">05</p>
               <h3>Anxiety &amp; Emotional Overwhelm</h3>
-              <hr class="rule" />
               <p>Understanding what is happening underneath stress, fear or feeling unable to cope.</p>
             </article>
 
-            <article class="support-entry end reveal">
-              <p class="num">06</p>
+            <article class="support-entry reveal">
+              <p class="num" aria-hidden="true">06</p>
               <h3>Body Image &amp; Self-Worth</h3>
-              <hr class="rule" />
               <p>Exploring how you see yourself and the experiences that may have shaped that.</p>
             </article>
 
             <article class="support-entry reveal">
-              <p class="num">07</p>
+              <p class="num" aria-hidden="true">07</p>
               <h3>Life Transitions &amp; Loss</h3>
-              <hr class="rule" />
               <p>Support through changes in identity, relationships, health or circumstances.</p>
             </article>
 
-            <article class="support-entry support-remote reveal">
-              <p class="num">08</p>
+            <article class="support-entry wash-aqua reveal">
+              <p class="num" aria-hidden="true">08</p>
               <h3>Online &amp; Telephone Counselling</h3>
-              <hr class="rule" />
               <p>Flexible counselling if attending in person is difficult or not suitable.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section band-aqua" id="grief" aria-labelledby="grief-heading">
-        <div class="wrap grief-grid">
-          <div class="reveal">
+      <section class="section grief-section" id="grief" aria-labelledby="grief-heading">
+        <div class="wrap grief-layout">
+          <div class="grief-copy reveal">
             <p class="eyebrow">A particular area of care</p>
             <h2 id="grief-heading">Grief, loss &amp; health changes</h2>
             <p>
@@ -268,7 +291,7 @@
               hard to hold alone.
             </p>
           </div>
-          <div class="reveal">
+          <div class="grief-topics reveal">
             <p>People often come when they are living with:</p>
             <ul class="grief-list">
               <li>Bereavement</li>
@@ -284,9 +307,9 @@
         </div>
       </section>
 
-      <section class="section" id="experience" aria-labelledby="experience-heading">
-        <div class="wrap qual-grid">
-          <div class="section-head reveal">
+      <section class="section experience-section" id="experience" aria-labelledby="experience-heading">
+        <div class="wrap">
+          <div class="experience-intro reveal">
             <p class="eyebrow">Training and practice</p>
             <h2 id="experience-heading">Qualifications &amp; experience</h2>
             <p>
@@ -294,47 +317,48 @@
               alongside people at some of the most tender points in their lives.
             </p>
           </div>
-          <div class="reveal">
-            <ul class="qual-list">
-              <li>
-                <strong>Foundation Degree in Counselling (Integrative)</strong>
-                <span>Completed June 2026</span>
-              </li>
-              <li>
-                <strong>Level 3 Counselling Skills</strong>
-              </li>
-              <li>
-                <strong>Level 2 Counselling Skills</strong>
-              </li>
-              <li>
-                <strong>Certificate in Online and Telephone Counselling</strong>
-              </li>
-            </ul>
-            <blockquote class="callout">
-              <p>
+
+          <div class="experience-layout">
+            <div class="experience-quals reveal">
+              <ul class="qual-list">
+                <li>
+                  <strong>Foundation Degree in Counselling (Integrative)</strong>
+                  <span>Completed June 2026</span>
+                </li>
+                <li>
+                  <strong>Level 3 Counselling Skills</strong>
+                </li>
+                <li>
+                  <strong>Level 2 Counselling Skills</strong>
+                </li>
+                <li>
+                  <strong>Certificate in Online and Telephone Counselling</strong>
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-practice reveal">
+              <p class="practice-hours">
                 Claire has completed more than 100 hours of face-to-face counselling experience with
                 Macmillan Cancer Support at the Delamere Centre, Walton Hospital, supporting people
                 affected by cancer, bereavement, anticipatory grief, trauma, anxiety, depression and
                 life-limiting illness.
               </p>
-            </blockquote>
-            <p class="cpd">
-              Professional development includes suicide awareness training, child protection,
-              safeguarding vulnerable adults, attachment in the early years, trauma-informed
-              practice, stress awareness, regular clinical supervision, and ongoing CPD in
-              integrative and relational approaches.
-            </p>
-            <p class="placeholder-note">
-              Professional membership, insurance and session fee details can be added here when
-              Claire is ready to share them.
-            </p>
+              <p class="cpd">
+                Professional development includes Suicide Awareness Training — Halton Health
+                Improvement, January 2025 (3 CPD points), child protection, safeguarding vulnerable
+                adults, attachment in the early years, trauma-informed practice, stress awareness,
+                regular clinical supervision, and ongoing CPD in integrative and relational
+                approaches.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section band-lilac" id="online" aria-labelledby="online-heading">
-        <div class="wrap online-grid">
-          <div class="measure reveal">
+      <section class="section online-section" id="online" aria-labelledby="online-heading">
+        <div class="wrap online-layout">
+          <div class="online-copy reveal">
             <p class="eyebrow">If coming in person is difficult</p>
             <h2 id="online-heading">Online &amp; telephone counselling</h2>
             <p>
@@ -347,8 +371,14 @@
               different.
             </p>
           </div>
-          <div class="online-visual reveal" aria-hidden="true">
-            <img src="./images/logo.png" width="1050" height="600" alt="" />
+          <div class="online-visual reveal">
+            <img
+              class="online-badge"
+              src="./images/online-telephone-badge.png"
+              width="150"
+              height="150"
+              alt="Online and Telephone Counselling Certified Counsellor"
+            />
           </div>
         </div>
       </section>
@@ -360,21 +390,20 @@
             <h2 id="location-heading">Location</h2>
           </div>
           <div class="reveal">
-            <address class="address">
-              72 Leopard Moth Road<br />
-              Sealand<br />
-              Deeside<br />
-              Flintshire<br />
-              CH5 2FX
-            </address>
-            <a
-              class="map-link"
-              href="https://www.google.com/maps/search/?api=1&amp;query=72+Leopard+Moth+Road+Sealand+Deeside+CH5+2FX"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              View on Google Maps
-            </a>
+            <ul class="place-list">
+              <li>
+                <p class="place-name">Pioneer House</p>
+                <p class="place-area">Ellesmere Port</p>
+              </li>
+              <li>
+                <p class="place-name">The Old Police Station</p>
+                <p class="place-area">Runcorn Old Town</p>
+              </li>
+              <li>
+                <p class="place-name">Buckley</p>
+                <p class="place-area">Flintshire</p>
+              </li>
+            </ul>
             <p>Online and telephone counselling are also available.</p>
           </div>
         </div>
@@ -389,44 +418,13 @@
               You do not need to have the right words. A short message about what you are looking
               for is enough to begin.
             </p>
-            <div class="contact-aside">
-              <p>
-                Claire’s email address and telephone number can be added here when she is ready to
-                share them.
-              </p>
-            </div>
           </div>
-          <form
-            class="form reveal"
-            id="enquiry-form"
-            data-email=""
-            novalidate
-            aria-describedby="form-status"
-          >
-            <!-- Add Claire’s enquiry email to data-email when it is available. -->
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required />
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required />
-            </div>
-            <div class="field">
-              <label for="contact-preference">Preferred way to be contacted</label>
-              <select id="contact-preference" name="contact-preference">
-                <option value="Email">Email</option>
-                <option value="Telephone">Telephone</option>
-                <option value="Either">Either</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <button class="btn" type="submit">Send an enquiry</button>
-            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-          </form>
+          <div class="contact-action reveal">
+            <a class="btn" href="mailto:caringconnetions@protonmail.com">Email me</a>
+            <p class="contact-email">
+              <a href="mailto:caringconnetions@protonmail.com">caringconnetions@protonmail.com</a>
+            </p>
+          </div>
         </div>
       </section>
     </main>
@@ -436,11 +434,8 @@
         <div class="footer-inner">
           <div>
             <p class="brand-name">Caring Connections Therapy</p>
-            <p class="footer-meta">Claire Perry · Integrative Counsellor · Sealand, Deeside, Flintshire</p>
+            <p class="footer-meta">Claire Perry · Integrative Counsellor · Ellesmere Port, Runcorn and Buckley</p>
           </div>
-          <p class="footer-meta">
-            A privacy notice and emergency support links can be added here.
-          </p>
         </div>
         <p class="site-credit">Eunoia Web Studio</p>
       </div>

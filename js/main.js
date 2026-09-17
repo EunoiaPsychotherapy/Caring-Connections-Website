@@ -3,14 +3,14 @@
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector("#site-nav");
   const navLinks = nav ? [...nav.querySelectorAll("a")] : [];
-  const form = document.querySelector("#enquiry-form");
-  const status = document.querySelector("#form-status");
-  const contactEmail = (form && form.dataset.email ? form.dataset.email : "").trim();
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const closeNav = () => {
     document.body.classList.remove("nav-open");
-    if (toggle) toggle.setAttribute("aria-expanded", "false");
+    if (toggle) {
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Open menu");
+    }
   };
 
   if (toggle && nav) {
@@ -62,37 +62,4 @@
   } else {
     document.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-visible"));
   }
-
-  if (!form) return;
-
-  const setStatus = (message, state) => {
-    if (!status) return;
-    status.textContent = message;
-    status.dataset.state = state || "";
-  };
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const data = new FormData(form);
-    const name = String(data.get("name") || "").trim();
-    const fromEmail = String(data.get("email") || "").trim();
-    const message = String(data.get("message") || "").trim();
-
-    if (!name || !fromEmail || !message) {
-      setStatus("Please complete your name, email and message so Claire has a way to reply.", "error");
-      return;
-    }
-
-    if (!contactEmail) {
-      setStatus("Thank you. Claire’s enquiry email is not listed on the site yet, so this message has not been sent. Please try again once her contact details appear here.", "error");
-      return;
-    }
-
-    const subject = encodeURIComponent(`Counselling enquiry from ${name}`);
-    const body = encodeURIComponent(
-      `${message}\n\n—\n${name}\n${fromEmail}\nPreferred contact: ${String(data.get("contact-preference") || "Not specified")}`
-    );
-    window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
-    setStatus("Your email app should open with the enquiry ready to send.", "ok");
-  });
 })();
