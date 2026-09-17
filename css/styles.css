@@ -431,6 +431,7 @@ body.nav-open .nav-toggle span:last-child {
   width: min(19.5rem, 86vw);
   height: auto;
   margin: 0 auto 2.4rem;
+  border-radius: 2.6rem 4.4rem 2.8rem 5rem;
 }
 
 .hero-copy {
@@ -520,11 +521,164 @@ body.nav-open .nav-toggle span:last-child {
 .section {
   padding: clamp(4.2rem, 9vw, 7.2rem) 0;
   position: relative;
+  overflow: hidden;
   scroll-margin-top: calc(var(--header) + 0.75rem);
+}
+
+.section > .wrap {
+  position: relative;
+  z-index: 1;
 }
 
 .section-head {
   margin-bottom: 1.5rem;
+}
+
+.sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.motif {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.motif-leaf {
+  position: absolute;
+  height: auto;
+  display: block;
+}
+
+.leaf-plum {
+  color: var(--plum);
+  opacity: 0.055;
+}
+
+.leaf-lilac {
+  color: var(--lilac-deep);
+  opacity: 0.2;
+}
+
+.leaf-aqua {
+  color: var(--aqua);
+  opacity: 0.07;
+}
+
+.leaf-cream {
+  color: var(--cream);
+  opacity: 0.09;
+}
+
+.about-leaf-a {
+  width: min(34vw, 20rem);
+  left: -12%;
+  top: -8%;
+  transform: rotate(-24deg);
+}
+
+.about-leaf-b {
+  width: min(28vw, 16.5rem);
+  left: 2%;
+  bottom: -16%;
+  transform: rotate(22deg);
+}
+
+.understanding-leaf-a {
+  width: min(36vw, 21rem);
+  left: -12%;
+  bottom: -18%;
+  transform: rotate(-30deg);
+}
+
+.support-leaf-a {
+  width: min(30vw, 17rem);
+  right: -13%;
+  top: -8%;
+  transform: rotate(18deg);
+}
+
+.grief-leaf-a {
+  width: min(34vw, 20rem);
+  right: -10%;
+  top: -6%;
+  transform: rotate(26deg);
+}
+
+.grief-leaf-b {
+  width: min(28vw, 16rem);
+  left: -14%;
+  bottom: -16%;
+  transform: rotate(-24deg);
+}
+
+.experience-leaf-a {
+  width: min(34vw, 20rem);
+  right: -8%;
+  top: -10%;
+  transform: rotate(18deg);
+}
+
+.experience-leaf-b {
+  width: min(30vw, 17.5rem);
+  left: -4%;
+  bottom: -10%;
+  transform: rotate(-28deg);
+}
+
+.online-leaf-a {
+  width: min(32vw, 18.5rem);
+  left: -18%;
+  top: auto;
+  bottom: -16%;
+  transform: rotate(-22deg);
+}
+
+.location-leaf-a {
+  width: min(28vw, 16rem);
+  right: -12%;
+  top: -10%;
+  transform: rotate(16deg);
+}
+
+.location-leaf-b {
+  width: min(34vw, 19rem);
+  left: -16%;
+  bottom: -20%;
+  transform: rotate(-38deg);
+}
+
+.fees-leaf-a {
+  width: min(36vw, 21rem);
+  left: -12%;
+  top: -14%;
+  transform: rotate(-20deg);
+}
+
+.fees-leaf-b {
+  width: min(30vw, 17rem);
+  right: -14%;
+  bottom: -12%;
+  transform: rotate(28deg);
+}
+
+.contact-leaf-a {
+  width: min(32vw, 18rem);
+  right: -15%;
+  top: 4%;
+  transform: rotate(20deg);
+}
+
+.contact-leaf-b {
+  width: min(26vw, 15rem);
+  left: -18%;
+  bottom: -18%;
+  transform: rotate(-16deg);
 }
 
 .band-lilac {
@@ -1034,7 +1188,6 @@ body.nav-open .nav-toggle span:last-child {
 
 .contact-section {
   background: color-mix(in srgb, var(--lilac) 22%, var(--cream));
-  min-height: calc(100svh - var(--header));
 }
 
 .reveal {
@@ -1318,6 +1471,13 @@ body.nav-open .nav-toggle span:last-child {
     padding: 3rem 0 2.8rem;
   }
 
+  .about-leaf-a {
+    width: 14rem;
+    left: -26%;
+    top: -8%;
+    opacity: 0.045;
+  }
+
   .hero-leaf-a {
     width: 13.5rem;
     left: -22%;
@@ -1333,9 +1493,63 @@ body.nav-open .nav-toggle span:last-child {
     opacity: 0.045;
   }
 
+  .about-leaf-b,
+  .support-leaf-a,
+  .experience-leaf-b,
+  .online-leaf-a,
+  .location-leaf-b,
+  .fees-leaf-b,
+  .contact-leaf-b,
+  .grief-leaf-b {
+    display: none;
+  }
+
+  .understanding-leaf-a {
+    width: 14rem;
+    left: -28%;
+    bottom: -12%;
+    opacity: 0.045;
+  }
+
+  .grief-leaf-a {
+    width: 13.5rem;
+    right: -26%;
+    top: -8%;
+    opacity: 0.06;
+  }
+
+  .experience-leaf-a {
+    width: 13.5rem;
+    right: -28%;
+    top: -10%;
+    opacity: 0.045;
+  }
+
+  .location-leaf-a {
+    width: 13rem;
+    right: -30%;
+    top: -6%;
+    opacity: 0.04;
+  }
+
+  .fees-leaf-a {
+    width: 15rem;
+    left: -30%;
+    top: -12%;
+    opacity: 0.045;
+  }
+
+  .contact-leaf-a {
+    width: 13.5rem;
+    right: -32%;
+    top: 0;
+    opacity: 0.04;
+  }
+
   .hero-logo {
     width: min(18.5rem, 86vw);
     margin-bottom: 2rem;
+    border-radius: 2rem 3.2rem 2.2rem 3.8rem;
   }
 
   .hero-copy {
