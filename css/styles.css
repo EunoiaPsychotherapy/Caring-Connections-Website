@@ -596,11 +596,25 @@ body.nav-open .nav-toggle span:last-child {
   transform: rotate(-30deg);
 }
 
+.understanding-leaf-b {
+  width: min(32vw, 18.5rem);
+  right: -6%;
+  top: -10%;
+  transform: rotate(18deg);
+}
+
 .support-leaf-a {
   width: min(30vw, 17rem);
   right: -13%;
   top: -8%;
   transform: rotate(18deg);
+}
+
+.support-leaf-b {
+  width: min(34vw, 19.5rem);
+  left: -4%;
+  bottom: -12%;
+  transform: rotate(-28deg);
 }
 
 .grief-leaf-a {
@@ -637,6 +651,13 @@ body.nav-open .nav-toggle span:last-child {
   top: auto;
   bottom: -16%;
   transform: rotate(-22deg);
+}
+
+.online-leaf-b {
+  width: min(32vw, 18rem);
+  right: -4%;
+  top: -10%;
+  transform: rotate(22deg);
 }
 
 .location-leaf-a {
@@ -1144,9 +1165,24 @@ body.nav-open .nav-toggle span:last-child {
 }
 
 .site-footer {
+  position: relative;
+  overflow: hidden;
   background: var(--plum);
   color: var(--cream);
   padding: 2.2rem 0 2.4rem;
+}
+
+.site-footer > .wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-leaf-a {
+  width: min(30vw, 17rem);
+  right: -8%;
+  top: -42%;
+  transform: rotate(26deg);
+  opacity: 0.08;
 }
 
 .site-footer a {
@@ -1495,12 +1531,14 @@ body.nav-open .nav-toggle span:last-child {
 
   .about-leaf-b,
   .support-leaf-a,
+  .understanding-leaf-b,
   .experience-leaf-b,
   .online-leaf-a,
   .location-leaf-b,
   .fees-leaf-b,
   .contact-leaf-b,
-  .grief-leaf-b {
+  .grief-leaf-b,
+  .footer-leaf-a {
     display: none;
   }
 
@@ -1509,6 +1547,20 @@ body.nav-open .nav-toggle span:last-child {
     left: -28%;
     bottom: -12%;
     opacity: 0.045;
+  }
+
+  .support-leaf-b {
+    width: 14.5rem;
+    left: -30%;
+    bottom: -16%;
+    opacity: 0.04;
+  }
+
+  .online-leaf-b {
+    width: 13.5rem;
+    right: -28%;
+    top: -12%;
+    opacity: 0.06;
   }
 
   .grief-leaf-a {
