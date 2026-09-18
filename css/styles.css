@@ -1109,9 +1109,21 @@ body.nav-open .nav-toggle span:last-child {
 }
 
 .fee-student-note {
-  margin: 0;
+  margin: 0 0 1.6rem;
   max-width: 30rem;
   color: var(--ink-soft);
+}
+
+.fee-intro-call {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(1.28rem, 2vw, 1.6rem);
+  font-weight: 500;
+  color: var(--plum);
+}
+
+.fee-intro-call + .fee-intro-call {
+  margin-top: 0.75rem;
 }
 
 .online-visual {
