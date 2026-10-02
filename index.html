@@ -3,19 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Claire Perry | Caring Connections Therapy | Counsellor in Ellesmere Port, Runcorn and Buckley</title>
+    <title>Caring Connections Therapy | Counsellor in Ellesmere Port</title>
     <meta
       name="description"
-      content="I offer a warm, supportive space to explore grief, trauma, relationships, health changes and the experiences that can leave you feeling overwhelmed or stuck. I offer in-person counselling in Ellesmere Port, Runcorn and Buckley, and I also offer online and telephone sessions."
+      content="Integrative, person-centred counselling with Claire Perry in Ellesmere Port, Runcorn and Buckley. In-person, online and telephone sessions are available."
     />
+    <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#562179" />
+    <!-- Live site is GitHub Pages. If a custom domain is connected later, update this canonical, the Open Graph URL, JSON-LD url, sitemap.xml and robots.txt together. -->
     <link rel="canonical" href="https://eunoiapsychotherapy.github.io/Caring-Connections-Website/" />
+    <link
+      rel="sitemap"
+      type="application/xml"
+      href="https://eunoiapsychotherapy.github.io/Caring-Connections-Website/sitemap.xml"
+    />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/logo.png" />
-    <meta property="og:title" content="Claire Perry | Caring Connections Therapy" />
+    <meta property="og:title" content="Caring Connections Therapy | Counsellor in Ellesmere Port" />
     <meta
       property="og:description"
-      content="I offer integrative counselling with a person-centred focus in Ellesmere Port, Runcorn and Buckley. I also offer online and telephone counselling."
+      content="Integrative, person-centred counselling with Claire Perry in Ellesmere Port, Runcorn and Buckley. In-person, online and telephone sessions are available."
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_GB" />
@@ -34,10 +41,10 @@
     <meta property="og:image:height" content="600" />
     <meta property="og:image:alt" content="Caring Connections Therapy logo" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Claire Perry | Caring Connections Therapy" />
+    <meta name="twitter:title" content="Caring Connections Therapy | Counsellor in Ellesmere Port" />
     <meta
       name="twitter:description"
-      content="I offer integrative counselling with a person-centred focus in Ellesmere Port, Runcorn and Buckley. I also offer online and telephone counselling."
+      content="Integrative, person-centred counselling with Claire Perry in Ellesmere Port, Runcorn and Buckley. In-person, online and telephone sessions are available."
     />
     <meta
       name="twitter:image"
@@ -58,10 +65,19 @@
       {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
+        "@id": "https://eunoiapsychotherapy.github.io/Caring-Connections-Website/#practice",
         "name": "Caring Connections Therapy",
-        "description": "I offer integrative counselling with a person-centred focus, in person in Ellesmere Port, Runcorn and Buckley, and online or by telephone.",
+        "url": "https://eunoiapsychotherapy.github.io/Caring-Connections-Website/",
+        "description": "Integrative, person-centred counselling with Claire Perry in Ellesmere Port, Runcorn and Buckley. In-person, online and telephone sessions are available.",
         "image": "https://eunoiapsychotherapy.github.io/Caring-Connections-Website/images/logo.png",
-        "areaServed": ["Ellesmere Port", "Runcorn", "Buckley", "Flintshire"],
+        "email": "claire-caringconnections@protonmail.com",
+        "telephone": "+447487829827",
+        "areaServed": [
+          { "@type": "City", "name": "Ellesmere Port" },
+          { "@type": "City", "name": "Runcorn" },
+          { "@type": "City", "name": "Buckley" },
+          { "@type": "AdministrativeArea", "name": "Flintshire" }
+        ],
         "location": [
           {
             "@type": "Place",
@@ -92,13 +108,50 @@
             }
           }
         ],
-        "email": "claire-caringconnections@protonmail.com",
-        "telephone": "+447487829827",
         "founder": {
           "@type": "Person",
           "name": "Claire Perry",
           "jobTitle": "Integrative Counsellor",
-          "image": "https://eunoiapsychotherapy.github.io/Caring-Connections-Website/images/portrait.jpg"
+          "image": "https://eunoiapsychotherapy.github.io/Caring-Connections-Website/images/portrait.jpg",
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Foundation Degree in Counselling (Integrative)",
+              "description": "Completed June 2026"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Level 3 Counselling Skills"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Level 2 Counselling Skills"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Certificate in Online and Telephone Counselling"
+            }
+          ]
+        },
+        "makesOffer": {
+          "@type": "Offer",
+          "name": "50-minute individual counselling session",
+          "price": "50.00",
+          "priceCurrency": "GBP"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Counselling",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Grief & Bereavement" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trauma & Difficult Experiences" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Health & Life-Changing Diagnosis" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Family & Relationships" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Anxiety & Emotional Overwhelm" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Body Image & Self-Worth" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Life Transitions & Loss" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Online & Telephone Counselling" } }
+          ]
         }
       }
     </script>
@@ -123,6 +176,7 @@
             width="1050"
             height="600"
             alt=""
+            decoding="async"
           />
         </a>
         <button
@@ -182,6 +236,8 @@
             width="1050"
             height="600"
             alt="Caring Connections Therapy logo"
+            decoding="async"
+            fetchpriority="high"
           />
           <div class="hero-copy">
             <h1 id="hero-heading">Claire Perry</h1>
@@ -222,6 +278,8 @@
               width="1275"
               height="1594"
               alt="Claire Perry, integrative counsellor"
+              decoding="async"
+              loading="lazy"
             />
           </figure>
           <div class="about-copy measure reveal">
@@ -485,6 +543,8 @@
               width="150"
               height="150"
               alt="Online and Telephone Counselling Certified Counsellor"
+              decoding="async"
+              loading="lazy"
             />
           </div>
         </div>
@@ -506,16 +566,22 @@
           </div>
           <ul class="place-list">
             <li class="reveal">
-              <p class="place-name">Pioneer House</p>
-              <p class="place-area">Ellesmere Port</p>
+              <address>
+                <p class="place-name">Pioneer House</p>
+                <p class="place-area">Ellesmere Port</p>
+              </address>
             </li>
             <li class="reveal">
-              <p class="place-name">The Old Police Station</p>
-              <p class="place-area">Runcorn Old Town</p>
+              <address>
+                <p class="place-name">The Old Police Station</p>
+                <p class="place-area">Runcorn Old Town</p>
+              </address>
             </li>
             <li class="reveal">
-              <p class="place-name">Buckley</p>
-              <p class="place-area">Flintshire</p>
+              <address>
+                <p class="place-name">Buckley</p>
+                <p class="place-area">Flintshire</p>
+              </address>
             </li>
           </ul>
           <p class="location-note reveal">I also offer online and telephone counselling.</p>
@@ -573,9 +639,9 @@
               <a class="btn" href="mailto:claire-caringconnections@protonmail.com">Get in touch</a>
               <a class="btn btn-ghost" href="tel:+447487829827">Call me</a>
             </div>
-            <p class="contact-email">
+            <address class="contact-email">
               <a href="mailto:claire-caringconnections@protonmail.com">claire-caringconnections@protonmail.com</a>
-            </p>
+            </address>
           </div>
         </div>
       </section>
@@ -596,6 +662,8 @@
               width="1050"
               height="600"
               alt="Caring Connections Therapy"
+              decoding="async"
+              loading="lazy"
             />
             <p class="footer-meta">Claire Perry · Integrative Counsellor · Ellesmere Port, Runcorn and Buckley</p>
           </div>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eunoiapsychotherapy.github.io/Caring-Connections-Website/sitemap.xml
